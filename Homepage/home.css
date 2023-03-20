@@ -169,6 +169,10 @@ header{
     width: 100%;
 }
 
+.categories{
+    margin-top: -100px;
+}
+
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -301,42 +305,42 @@ small{
 
 /*---footer---*/
 
-.footer{
-    background: #000;
-    color: #0d0d0d;
+footer{
+    background: #1f1f1f;
+    color: #ffffff;
     font-size: 14px;
     padding: 60px 0 20px;
 }
 
-.footer p{
+footer p{
     color: #8a8a8a;
 }
 
-.footer h3{
+footer h3{
     color: #fff;
     margin-bottom: 20px;
 }
 
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
     min-width: 250px;
     margin-bottom: 20px;
 }
 
-.footer-col-1{
+footer-col-1{
     flex-basis: 30%;
 }
 
-.footer-col-2{
+footer-col-2{
     flex: 1;
     text-align: center;
 }
 
-.footer-col-2 img{
+footer-col-2 img{
     width: 180px;
     margin-bottom: 20px;
 }
 
-.footer-col-3, .footer-col-4{
+footer-col-3, .footer-col-4{
     flex-basis: 12%;
     text-align: left;
 }
