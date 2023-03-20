@@ -138,11 +138,13 @@ header{
 
 .swiper{
     width: 1792px;
-    height: 447px;
+    height: fit-content;
+    margin-top: -50px;
 }
 
 .swiper-slider img{
     width: 100%;
+    
 }
 
 .swiper .swiper-button-prev, .swiper-button-next{
