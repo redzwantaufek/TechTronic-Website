@@ -272,9 +272,31 @@ small{
 
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
-    text-align: center;
+    text-align: left;
 }
 
 ul{
     list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copy-right{
+    text-align: center;
+    color: #8a8a8a;
+    font-size: 14px;
+    margin-top: 12px;
 }
