@@ -103,3 +103,13 @@ span {
 #register{
   left: 450px;
 }
+
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 24%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  align-items: center;
+}
