@@ -61,7 +61,23 @@
     </header>
 
     <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="tuto/aston-martin.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="tuto/audi-rs-e-tron-gt.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="tuto/maserati-mc20.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="tuto/nio-et5.jpg" alt=""></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
       
     <!-- featured categories -->
@@ -321,10 +337,10 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-5">
-                    <img src="tuto/logo-godrej.png">
+                    <img src="Images/keychron logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="tuto/logo-oppo.png">
+                    <img src="Images/royal kludge logo.png">
                 </div>
                 <div class="col-5">
                     <img src="tuto/logo-coca-cola.png">
@@ -384,5 +400,27 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', 
+        {
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: 
+            {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+
+            navigation: 
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
