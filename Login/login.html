@@ -10,9 +10,24 @@
   <div class="box">
     <div class = "form-box">
       <div class = "button-box">
+        <div id="btn"></div>
         <button type="button" class="toggle-btn">Login</button>
         <button type="button" class="toggle-btn">Register</button>
       </div>
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User ID" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User ID" required>
+        <input type="email" class="input-field" placeholder="Email ID" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
     </div>
   </div>
 </body>
