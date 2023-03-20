@@ -158,9 +158,17 @@ h4{
 .col-4:hover{
     transform: translateY(-5px)
 }
-
+/*---offer---*/
 .offer{
     background: linear-gradient(#fff,#00ccff7a);
     margin: 0px;
     padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+small{
+    color: #555;
 }
