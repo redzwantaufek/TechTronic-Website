@@ -8,6 +8,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/*header nav*/
+
 header{
     position: fixed;
     top: 0;
@@ -79,6 +81,10 @@ nav ul li:hover > ul {
     display: inherit;
 }
   
+nav ul li a.current {
+    color: #2081cb; /* change the color of the current page's link */
+    font-weight: bold; /* make the current page's link bold */
+  }
   
 .cart{
     width: 30px;
@@ -100,6 +106,8 @@ nav ul li:hover > ul {
 .menu-is-open header{
     filter: none;
 }
+
+/*.categories*/
 
 .row{
     display: flex;
