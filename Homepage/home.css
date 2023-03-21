@@ -26,7 +26,7 @@ nav {
 
 nav ul li a img{
     top: 1000px;
-    width: 170px;
+    width: 250px;
     height: fit-content;
     padding:0;
     margin-top: 10px;
@@ -84,7 +84,12 @@ nav ul li:hover > ul {
 nav ul li a.current {
     color: #2081cb; /* change the color of the current page's link */
     font-weight: bold; /* make the current page's link bold */
-  }
+}
+
+nav a:hover {
+background-color: gray;
+color: white;
+}
   
 .cart{
     width: 30px;
