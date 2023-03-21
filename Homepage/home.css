@@ -8,61 +8,78 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 0px;
-    margin-top: -90px;
-}
-
-.logo img{
-    width: 250px;
-    padding: 15px;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-}
-
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 50px;
-    top: 0;
-}
-
-a{
-    text-decoration: none;
-    color: #000000;
-}
-
-p{
-    color: #000000;
-}
-
 header{
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
     position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-    height: 15%;
-	padding: 20px 0;
-	text-align: center;
-	background: #ffffff;
-	z-index: 9999;
-	transition: all 300ms ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    transition: 0.5s;
 }
 
+nav {
+    align-items: center;
+  }
 
+nav ul li a img{
+    top: 1000px;
+    width: 170px;
+    height: fit-content;
+    padding:0;
+    margin-top: 10px;
+    align-items: left;
+}
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background-color: #000000;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+  }
+  
+  nav ul ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  nav ul ul li a {
+    padding: 10px 20px;
+    color: #fff;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+  
+  
 .cart{
     width: 30px;
     height: 30px;
