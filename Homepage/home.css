@@ -328,7 +328,7 @@ footer{
     background: #1f1f1f;
     color: #ffffff;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 60px 0;
 }
 
 footer p{
@@ -336,7 +336,7 @@ footer p{
 }
 
 footer h3{
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -355,13 +355,18 @@ footer h3{
 }
 
 .footer-col-2 img{
-    width: 60%;
+    width: 30%;
     height: fit-content;
 }
 
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
     text-align: left;
+    color: #fff;
+}
+
+.footer-col-3 ul li a, .footer-col-4 ul li a{
+    color: #fff;
 }
 
 ul{
