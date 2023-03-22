@@ -57,6 +57,7 @@ nav ul li a {
   
 nav ul li:hover {
     background-color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
   
 nav ul ul {
@@ -82,8 +83,14 @@ nav ul li:hover > ul {
 }
   
 nav ul li a.current {
-    color: #2081cb; /* change the color of the current page's link */
-    font-weight: bold; /* make the current page's link bold */
+    color: #2081cb; 
+    font-weight: bold; 
+}
+
+nav ul li ul li{
+    text-align: left;
+    padding: 10px 20px;
+    margin: 0;
 }
 
 nav ul li:hover > ul {
