@@ -144,10 +144,10 @@ body, #slider, .wrap, .slide-content {
 }
 
 .slide1 {
-    background-image: url("Images/poster 1.png");
+    background-image: url("Images/poster\ \ 1.png");
 }
 .slide2 {
-    background-image: url("Images/poster 2.png");
+    background-image: url("Images/poster\ 2.png");
 }
 .slide3 {
     background-image: url("Images/poster 3.png");
@@ -266,10 +266,6 @@ body, #slider, .wrap, .slide-content {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/*.categories{
-    margin-top: -100px;
-}*/
-
 /*product list*/
 
 .product-list {
@@ -281,8 +277,7 @@ body, #slider, .wrap, .slide-content {
     width: calc(33.33% - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
