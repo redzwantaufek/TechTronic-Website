@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*header nav*/
+/*--header nav--*/
 
 header{
     position: fixed;
@@ -127,7 +127,6 @@ nav ul li ul li:hover a {
 body, #slider, .wrap, .slide-content {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -189,6 +188,8 @@ body, #slider, .wrap, .slide-content {
     right: 0;
     margin-right: 30px;
 }
+
+/*--Category--*/
 
 .row{
     display: flex;
@@ -266,7 +267,7 @@ body, #slider, .wrap, .slide-content {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/*product list*/
+/*--product list--*/
 
 .product-list {
     display: flex;
@@ -357,8 +358,6 @@ body, #slider, .wrap, .slide-content {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
   
-/**/
-
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -379,11 +378,6 @@ body, #slider, .wrap, .slide-content {
 h4{
     color: #000000;
     font-weight: normal;
-}
-
-
-.rating .fa{
-    color: #ff523b;
 }
 
 /*---offer---*/
@@ -480,7 +474,10 @@ footer h3{
 }
 
 .row{
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
