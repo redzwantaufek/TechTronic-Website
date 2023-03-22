@@ -107,11 +107,11 @@ nav ul li ul li:hover a {
 }
 
 .scroll-down header {
-		transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
 }
 
 .scroll-up header {
-		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
 }
 
 .menu-is-open {
@@ -122,7 +122,73 @@ nav ul li ul li:hover a {
     filter: none;
 }
 
-/*.categories*/
+
+/*--slide--*/
+body, #slider, .wrap, .slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("Images/poster 1.png");
+}
+.slide2 {
+    background-image: url("Images/poster 2.png");
+}
+.slide3 {
+    background-image: url("Images/poster 3.png");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+    }
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
 
 .row{
     display: flex;
@@ -166,34 +232,6 @@ nav ul li ul li:hover a {
 
 .header .row{
     margin-top: 70px;
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.swiper{
-    width: 1792px;
-    height: fit-content;
-    margin-top: -50px;
-    margin-bottom: 0;
-}
-
-.swiper-slider img{
-    width: 100%;
-    
-}
-
-.swiper .swiper-button-prev, .swiper-button-next{
-    color: #fff;
-}
-
-.swiper .swiper-pagination-bullet-active{
-    background: #fff;
 }
 
 .categories .col-3{

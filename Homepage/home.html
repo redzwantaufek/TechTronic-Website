@@ -63,25 +63,27 @@
 
     <!--Slide-->
 
-    <div class="container">
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><a href=""><img src="Images/poster 1.png" alt=""></a></div>
-            <div class="swiper-slide"><a href=""><img src="Images/poster 2.png" alt=""></a></div>
-            <div class="swiper-slide"><a href=""><img src="Images/poster 3.png" alt=""></a></div>
-            ...
+    <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+            <div id="slider">
+                <div class="slide slide1">
+                    <div class="slide-content">
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="slide-content">
+                    </div>
+                </div>
+
+                <div class="slide slide3">
+                    <div class="slide-content">
+                    </div>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
+        <div id="arrow-right" class="arrow"></div>
     </div>
-      
+
     <!-- featured categories -->
     <div class="categories">
         <div class="small-container">
@@ -321,26 +323,78 @@
     <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', 
+        let sliderImages = document.querySelectorAll(".slide"),
+        arrowLeft = document.querySelector("#arrow-left"),
+        arrowRight = document.querySelector("#arrow-right"),
+        current = 0,
+        timer;
+
+        // Clear all images
+        function reset() 
         {
-            autoplay:{
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-
-            pagination: 
+            for (let i = 0; i < sliderImages.length; i++) 
             {
-                el: '.swiper-pagination',
-                clickable:true,
-            },
+                sliderImages[i].style.display = "none";
+            }
+        }
 
-            navigation: 
+        // Init slider
+        function startSlide() 
+        {
+            reset();
+            sliderImages[0].style.display = "block";
+            timer = setInterval(slideRight, 4000);
+        }
+
+        // Stop slider
+        function stopSlide() 
+        {
+            clearInterval(timer);
+        }
+
+        // Show prev
+        function slideLeft() 
+        {
+            reset();
+            sliderImages[current - 1].style.display = "block";
+            current--;
+        }
+
+        // Show next
+        function slideRight() 
+        {
+            reset();
+            if (current === sliderImages.length - 1) 
             {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+                current = -1;
+            }
+            sliderImages[current + 1].style.display = "block";
+            current++;
+        }
+
+        // Left arrow click
+        arrowLeft.addEventListener("click", function() 
+        {
+            stopSlide();
+            if (current === 0) 
+            {
+                current = sliderImages.length;
+            }
+            slideLeft();
         });
+
+        // Right arrow click
+        arrowRight.addEventListener("click", function() 
+        {
+            stopSlide();
+            if (current === sliderImages.length - 1) 
+            {
+                current = -1;
+            }
+            slideRight();
+        });
+
+        startSlide();
     </script>
 </body>
 </html>
