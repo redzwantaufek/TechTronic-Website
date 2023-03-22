@@ -85,12 +85,7 @@ nav ul li a.current {
     color: #2081cb; /* change the color of the current page's link */
     font-weight: bold; /* make the current page's link bold */
 }
-
-nav a:hover {
-background-color: gray;
-color: white;
-}
-  
+ 
 .cart{
     width: 30px;
     height: 30px;
