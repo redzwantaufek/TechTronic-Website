@@ -85,7 +85,15 @@ nav ul li a.current {
     color: #2081cb; /* change the color of the current page's link */
     font-weight: bold; /* make the current page's link bold */
 }
- 
+
+nav ul li:hover > ul {
+    display: block;
+}
+  
+nav ul li ul li:hover a {
+    color: #2081cb;
+}
+
 .cart{
     width: 30px;
     height: 30px;
@@ -269,6 +277,7 @@ nav ul li a.current {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
   
 @media screen and (max-width: 768px) {
@@ -302,6 +311,11 @@ nav ul li a.current {
 
 .product h3:hover {
     color: #0046d2;
+}
+
+.product button:hover {
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
   
 /**/
