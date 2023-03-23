@@ -84,10 +84,10 @@ include '../components/wishlist_cart.php';
    
    <!-----------------search bar------------------>
    <section class="search-form">
-      <form action="" method="post">
-         <input type="text" name="search_box" placeholder="search here..." maxlength="100" class="box" required>
-         <button type="submit" class="fas fa-search" name="search_btn"></button>
-      </form>
+   <form class="search-form" action="" method="post">
+      <input type="text" name="search_box"  class="search-input" placeholder="search here..." maxlength="100" class="box" required>
+      <button type="submit" class="search-button"  name="search_btn"> <i class="fa fa-search"></i></button>
+   </form>
    </section>
 
    <section class="products" style="padding-top: 0; min-height:100vh;">
