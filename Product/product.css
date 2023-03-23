@@ -396,10 +396,7 @@ nav ul li ul li:hover a {
     padding-right: 0.6rem;
     display: inline-block;
 }
-.product-price:first-of-type{
-    text-decoration: line-through;
-    color: var(--carribean-green);
-}
+
 .product-img img{
     transition: transform 0.6s ease;
 }
