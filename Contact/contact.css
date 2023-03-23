@@ -127,6 +127,13 @@ main {
 	padding: 110px 0;
 }
 
+.logo{
+    width: 20%;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
 
 table {
     border: none;
