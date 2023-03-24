@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Account - Ecommerce Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Ecommerce Website</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Cart</a></li>
+				<li><a href="#">My Account</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>My Account</h2>
+		<section class="profile">
+			<h3>Profile Information</h3>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" value="John Doe">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" value="johndoe@example.com">
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" value="password123">
+
+				<button type="submit">Save Changes</button>
+			</form>
+		</section>
+		<section class="orders">
+			<h3>Order History</h3>
+			<ul>
+				<li>
+					<span class="order-date">May 1, 2023</span>
+					<span class="order-total">$100.00</span>
+				</li>
+				<li>
+					<span class="order-date">April 1, 2023</span>
+					<span class="order-total">$50.00</span>
+				</li>
+				<li>
+					<span class="order-date">March 1, 2023</span>
+					<span class="order-total">$75.00</span>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Ecommerce Website</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
