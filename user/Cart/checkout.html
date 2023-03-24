@@ -63,47 +63,29 @@
 
     <!-----------------checkout------------------>
 
-    <main>
-        <div class="progress-checkout-container">
-            <div class="progress-step-container">
-                <div class="step-check"></div>
-                <span class="step-title">Shipping</span>
-            </div>
-            <div class="progress-step-container">
-                <div class="step-check"></div>
-                <span class="step-title">Payment</span>
-            </div>
-            <div class="progress-step-container">
-                <div class="step-check"></div>
-                <span class="step-title">Review</span>
-            </div>
-        </div>
-        
-        <div class="form-container">
-            <h2 class="form-title">Payment Details</h2>
-            <form action="" class="checkout-form">
-                <div class="input-line">
-                    <label for="name">Name on card</label>
-                    <input type="text" name="name" id="name" placeholder="Your name and surname">
-                </div>
-                <div class="input-line">
-                    <label for="name">Card number</label>
-                    <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444">
-                </div>
-                <div class="input-container">
-                    <div class="input-line">
-                        <label for="name">Expiring Date</label>
-                        <input type="text" name="name" id="name" placeholder="09-21">
-                    </div>
-                    <div class="input-line">
-                        <label for="name">CVC</label>
-                        <input type="text" name="name" id="name" placeholder="***">
-                    </div>
-                </div>
-                <input type="button" value="Complete purchase">
-            </form>
-        </div>
-    </main>
+    <div class="container">
+        <h1>Checkout</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" required>
+            <label for="Payment Method">Payment Method:</label>
+            <select id="Payment Method" name="Payment Method">
+                <option value="Cash On Delivery">Cash On Delivery</option>
+            </select><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 
     <!-----------------footer------------------>
     <footer>
@@ -133,8 +115,59 @@
         <p class="copy-right">© 2023 TecTronic Store. All Rights Reserved</p>
     </footer>
 
-     <!--javascript-->
-     <script src="cart.js"></script>
+    <!--javascript-->
+    <script src="cart.js"></script>
+    <script>
+    const form = document.querySelector('form');
+    const submitButton = document.querySelector('#submit');
+
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const address = document.querySelector('#address').value;
+        const city = document.querySelector('#city').value;
+        const state = document.querySelector('#state').value;
+        const zip = document.querySelector('#zip').value;
+        const card = document.querySelector('#card').value;
+        const exp = document.querySelector('#exp').value;
+        const cvv = document.querySelector('#cvv').value;
+        
+        // perform validation checks on the form inputs
+        if (name === '') {
+            alert('Please enter your name');
+        } else if (email === '') {
+            alert('Please enter your email');
+        } else if (address === '') {
+            alert('Please enter your address');
+        } else if (city === '') {
+            alert('Please enter your city');
+        } else if (state === '') {
+            alert('Please enter your state');
+        } else if (zip === '') {
+            alert('Please enter your zip code');
+        } else if (card === '') {
+            alert('Please enter your credit card number');
+        } else if (exp === '') {
+            alert('Please enter the expiration date of your credit card');
+        } else if (cvv === '') {
+            alert('Please enter the CVV number on your credit card');
+        } else {
+            // if all inputs are valid, submit the form
+            form.submit();
+        }
+    });
+
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdown.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+    });
+    </script>
 
 </body>
 </html>
