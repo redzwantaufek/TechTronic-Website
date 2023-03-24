@@ -352,7 +352,7 @@ nav ul li ul li:hover a {
     opacity: 0;
     transition: opacity 0.6s ease;
 }
-.btn-cart{
+.add-to-cart{
     background: transparent;
     border: 1px solid black;
     padding: 0.8rem 0;
@@ -363,11 +363,11 @@ nav ul li ul li:hover a {
     border: none;
     transition: all 0.6s ease;
 }
-.btn-cart{
+.add-to-cart{
     background: #2081cb;
     color: white;
 }
-.btn-cart:hover{
+.add-to-cart:hover{
     background: #000000;
 }
 

@@ -20,3 +20,19 @@ window.addEventListener("scroll", () => {
 	}
 	lastScroll = currentScroll;
 });
+
+function getProductById(productId) {
+	// This function should return the product with the given ID
+	// You can define your own products array or retrieve them from a server-side script
+  }
+  
+  function calculateTotal() {
+	// Find the total price of all items in the cart
+	var total = 0;
+	for (var i = 0; i < cart.length; i++) {
+	  var item = cart[i];
+	  var product = getProductById(item.id);
+	  total += product.price * item.quantity;
+	}
+	return total;
+  }
